@@ -16,6 +16,30 @@ class FirebaseForm extends Component {
     });
   };
 
+  onLogInSubmit = () => {
+    if (this.state.email && this.state.password) {
+      Firebase.doSignInWithEmailAndPassword(
+        this.state.email,
+        this.state.password
+      );
+    }
+  };
+
+  onCreateUserSubmit = () => {
+    if (this.state.email && this.state.password) {
+      Firebase.CreateUserWIthEmailAndPassword(
+        this.state.email,
+        this.state.password
+      );
+    }
+  };
+
+  onSignOutSubmit = () => {
+    if (this.state.email && this.state.password) {
+      Firebase.doSignOut();
+    }
+  };
+
   displayForm = () => {
     return (
       <div>
@@ -47,6 +71,7 @@ class FirebaseForm extends Component {
 
   render() {
     console.log(this.state, "the current state");
+    console.log(Firebase, "the firebase");
     return (
       <div>
         the form
