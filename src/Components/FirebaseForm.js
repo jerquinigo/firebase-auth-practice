@@ -16,6 +16,7 @@ class FirebaseForm extends Component {
     });
   };
 
+<<<<<<< HEAD
   onLogInSubmit = () => {
     if (this.state.email && this.state.password) {
       firebase.doSignInWithEmailAndPassword(
@@ -41,6 +42,8 @@ class FirebaseForm extends Component {
     }
   };
 
+=======
+>>>>>>> parent of be0643c... adding the onsubmit on the form
   displayForm = () => {
     return (
       <div>
@@ -82,8 +85,11 @@ class FirebaseForm extends Component {
 
   render() {
     console.log(this.state, "the current state");
+<<<<<<< HEAD
     console.log(firebase, "the firebase");
 
+=======
+>>>>>>> parent of be0643c... adding the onsubmit on the form
     return (
       <div>
         the form

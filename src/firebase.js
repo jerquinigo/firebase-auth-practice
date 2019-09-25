@@ -4,7 +4,7 @@ import "firebase/auth";
 import "firebase/database";
 
 const config = {
-  apiKey: "AIzaSyD8Qrs2vAVXNdHuG6k1fpcVB4gYik9qXlI",
+  apiKey: ,
   authDomain: "fir-react-auth-practice.firebaseapp.com",
   databaseURL: "https://fir-react-auth-practice.firebaseio.com",
   projectId: "fir-react-auth-practice",
